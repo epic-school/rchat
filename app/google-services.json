@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "862952835582",
+    "firebase_url": "https://rchat-66f6a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rchat-66f6a",
+    "storage_bucket": "rchat-66f6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862952835582:android:161c6fd21f17cc249cd8af",
+        "android_client_info": {
+          "package_name": "ru.rt.rchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862952835582-pqg1s47v3pu3arrirvfua015nlru34vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvgOlX1QAgZ-GUM1hVDZWf-LhP_qKSz2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862952835582-pqg1s47v3pu3arrirvfua015nlru34vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
