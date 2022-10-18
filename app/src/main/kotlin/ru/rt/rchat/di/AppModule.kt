@@ -2,7 +2,7 @@ package ru.rt.rchat.di
 
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
-import ru.rt.rchat.features.allusers.data.remote.AllUsersRepository
+import ru.rt.rchat.features.allusers.data.remote.AllUsersRepositoryImpl
 import ru.rt.rchat.features.autorization.data.remote.AuthRepository
 import ru.rt.rchat.features.chat.data.remote.ChatRepository
 import ru.rt.rchat.features.chatlist.data.remote.ChatListRepository
@@ -10,7 +10,7 @@ import ru.rt.rchat.features.newfriends.data.remote.NewFriendsRepository
 import ru.rt.rchat.features.profile.data.remote.ProfileRepository
 
 val appModule = module {
-    single { AllUsersRepository(get(), get(named(ioDispatcherName))) }
+    single { AllUsersRepositoryImpl(get(), get(named(ioDispatcherName))) }
     single { AuthRepository(get(), get(named(ioDispatcherName))) }
     single { ChatRepository(get(), get(named(ioDispatcherName))) }
     single { ChatListRepository(get(), get(named(ioDispatcherName))) }
