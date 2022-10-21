@@ -11,11 +11,16 @@ class AuthRepository(
     private val ioDispatcher: CoroutineDispatcher
 ) {
 
-    suspend fun login(login: Login) =
-        withContext(ioDispatcher) { authSource.loginWithEmailAndPassword(login) }
+    suspend fun login(
+        email: String,
+        pass: String
+    ) = withContext(ioDispatcher) { authSource.loginWithEmailAndPassword(Login(email, pass)) }
 
-    suspend fun createUser(newUser: CreateUser) =
-        withContext(ioDispatcher) { authSource.createUser(newUser) }
+    suspend fun createUser(
+        displayName: String,
+        email: String,
+        password: String
+    ) = withContext(ioDispatcher) { authSource.createUser(CreateUser(displayName, email, password)) }
 
     suspend fun isAdmin(): Result<Boolean> {
         withContext(ioDispatcher) { TODO() }
