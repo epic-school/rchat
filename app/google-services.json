@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "862952835582",
-    "firebase_url": "https://rchat-66f6a-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "rchat-66f6a",
-    "storage_bucket": "rchat-66f6a.appspot.com"
+    "project_number": "489040486326",
+    "firebase_url": "https://rchat-cca23-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rchat-cca23",
+    "storage_bucket": "rchat-cca23.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:862952835582:android:161c6fd21f17cc249cd8af",
+        "mobilesdk_app_id": "1:489040486326:android:844231ba6cc510dc82eb17",
         "android_client_info": {
           "package_name": "ru.rt.rchat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "862952835582-pqg1s47v3pu3arrirvfua015nlru34vc.apps.googleusercontent.com",
+          "client_id": "489040486326-u55bpic31vr0gu4k0dj91i2hsg6mq2st.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCvgOlX1QAgZ-GUM1hVDZWf-LhP_qKSz2s"
+          "current_key": "AIzaSyAZF_HrWNmMZNOWQV3VK4TqUlv7EMLQCQM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "862952835582-pqg1s47v3pu3arrirvfua015nlru34vc.apps.googleusercontent.com",
+              "client_id": "489040486326-u55bpic31vr0gu4k0dj91i2hsg6mq2st.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

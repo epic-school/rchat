@@ -16,13 +16,11 @@ import kotlin.Result.Companion.success
 
 class FirebaseAuthSource(private val auth: FirebaseAuth) {
 
-    //TODO не забыть выставить нужный диспетчер снаружи для suspend
     suspend fun loginWithEmailAndPassword(login: Login): Result<AuthResult> =
         safeCall {
             success(auth.signInWithEmailAndPassword(login.email, login.password).await())
         }
 
-    //TODO не забыть выставить нужный диспетчер снаружи для suspend
     suspend fun createUser(createUser: CreateUser): Result<AuthResult> =
         safeCall {
             success(auth.createUserWithEmailAndPassword(createUser.email, createUser.password).await())
@@ -32,7 +30,6 @@ class FirebaseAuthSource(private val auth: FirebaseAuth) {
         auth.signOut()
     }
 
-    //TODO использовать вместо зоопарка с FirebaseAuthStateObserver
     @ExperimentalCoroutinesApi
     fun getUserInfo(): Flow<FirebaseUser?> =
         callbackFlow {

@@ -29,20 +29,32 @@ android {
         jvmTarget = '1.8'
     }
     namespace 'ru.rt.rchat'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.20"
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
+    //Image Loader
+    implementation("io.coil-kt:coil:2.2.1")
+
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
+
     // Koin main features for Android
-    implementation "io.insert-koin:koin-android:3.2.1"
+    implementation "io.insert-koin:koin-android:3.2.2"
+    implementation 'io.insert-koin:koin-android-ext:3.0.2'
+    implementation  "io.insert-koin:koin-android-compat:3.1.5"
 
     //Navigation, lifecycle
     implementation 'androidx.navigation:navigation-fragment:2.5.2'
@@ -58,7 +70,8 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4"
 
     // Firebase
-    implementation 'com.google.firebase:firebase-database:20.0.6'
-    implementation 'com.google.firebase:firebase-auth:21.0.8'
-    implementation 'com.google.firebase:firebase-storage:20.0.2'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 }

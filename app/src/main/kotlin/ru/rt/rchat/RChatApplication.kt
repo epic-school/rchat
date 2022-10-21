@@ -6,6 +6,8 @@ import org.koin.core.context.startKoin
 import ru.rt.rchat.di.appModule
 import ru.rt.rchat.di.dispatchers
 import ru.rt.rchat.di.firebaseModule
+import ru.rt.rchat.features.allusers.allUsersModule
+import ru.rt.rchat.features.autorization.authModule
 
 class RChatApplication : Application() {
 
@@ -14,7 +16,7 @@ class RChatApplication : Application() {
 
         startKoin {
             androidContext(this@RChatApplication)
-            modules(appModule, firebaseModule, dispatchers)
+            modules(appModule, firebaseModule, dispatchers, allUsersModule, authModule)
         }
     }
 }
